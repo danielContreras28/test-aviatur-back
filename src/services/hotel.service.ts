@@ -1,6 +1,6 @@
 // import data hotels
-import { hotels, setHotels } from '../data/hotel.data'
-import { Hotel, HotelEntry } from '../interfaces/hotel.interfaces'
+import { hotels, setHotels, amenitie } from '../data/hotel.data'
+import { Hotel, HotelEntry, IAmenities } from '../interfaces/hotel.interfaces'
 
 // handler get all hotels
 export const getHotels = (): Hotel[] => hotels
@@ -38,3 +38,5 @@ export const deleteHotel = (id: string): void => {
     setHotels(updatedHotels)
   }
 }
+// handler amenities all hotels
+export const getHotelAmenities = (): IAmenities => amenitie

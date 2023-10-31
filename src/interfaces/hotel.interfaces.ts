@@ -9,3 +9,5 @@ export interface Hotel {
 }
 
 export type HotelEntry = Omit<Hotel, 'id'>
+
+export type IAmenities = Pick<Hotel, 'amenities'>

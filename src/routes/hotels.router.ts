@@ -16,6 +16,14 @@ router.get('/', (_, res) => {
     data: hotelService.getHotels()
   })
 })
+// router get all amenities
+router.get('/amenities', (_, res) => {
+  // Handle GET request for all amenities
+  res.json({
+    message: 'Get all amenities',
+    data: hotelService.getHotelAmenities()
+  })
+})
 // router get specific hotel
 router.get('/:id', (req, res) => {
   // Handle GET request for a specific hotel
